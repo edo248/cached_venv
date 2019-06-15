@@ -16,7 +16,7 @@ cached-venv
 
 
 
-ached-venv tool to create virtual envs out of requirements.txt files and cache for next time same requirements file is given
+cached-venv tool to create virtual envs out of requirements.txt files and cache for next time same requirements file is given
 
 
 * Free software: MIT license
