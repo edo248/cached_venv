@@ -7,7 +7,6 @@
 import unittest
 from click.testing import CliRunner
 
-from cached_venv import cached_venv
 from cached_venv import cli
 
 
@@ -26,9 +25,6 @@ class TestCached_venv(unittest.TestCase):
     def test_command_line_interface(self):
         """Test the CLI."""
         runner = CliRunner()
-        result = runner.invoke(cli.main)
-        assert result.exit_code == 0
-        assert 'cached_venv.cli.main' in result.output
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
